@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <test thread-count="5" parallel="classes" name="Test(failed)">
+    <classes>
+      <class name="test.scripts.FBRegistrationTest">
+        <methods>
+          <include name="TestFBRegistration"/>
+          <include name="SetUp"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- test.scripts.FBRegistrationTest -->
+      <class name="test.scripts.GmailRegistrationTest">
+        <methods>
+          <include name="SetUp"/>
+          <include name="afterMethod"/>
+          <include name="TestGmailRegistration"/>
+        </methods>
+      </class> <!-- test.scripts.GmailRegistrationTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,5 +1,6 @@
 package Test.Uitilities;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -9,11 +10,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class WebUtilis {
 	
-	//public ThreadLocal<RemoteWebDriver> driver = new ThreadLocal<RemoteWebDriver>();
+	//private static ThreadLocal<RemoteWebDriver> driver = new ThreadLocal<RemoteWebDriver>();
 	public final static String PROJECT_PATH = System.getProperty("user.dir") + "/" ;
 	public final static String webDriverPathChrome = PROJECT_PATH + "/drivers/chromedriver.exe";
 	public final static String chrome = "chrome";
@@ -22,12 +25,19 @@ public class WebUtilis {
 	public final static String agrClick ="argument[0].click()";
 	public final static String agrsStyleEmpty = "arguments[0].style.broder=''";
 	
-	 static WebDriver driver = new ChromeDriver();
+	public static WebDriver driver = new ChromeDriver();
 	public  WebDriver getDriver() {
 		return driver;
 	}
 	public static void tearDown() {
-		driver.quit();
+		 try {
+			if (driver != null) {
+			        driver.quit();
+}
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	public static void LaunchDriver() {
 		DesiredCapabilities caps = new DesiredCapabilities();;
@@ -36,12 +46,11 @@ public class WebUtilis {
 		System.setProperty("webdriver.chrome.driver", webDriverPathChrome);
 		System.out.println(webDriverPathChrome);
 		try {
-			driver.manage().window().maximize();
+			((WebDriver) driver).manage().window().maximize();
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		driver.get("https://en-gb.facebook.com/reg/");
 	}
 	@SuppressWarnings("deprecation")
 	public static void waitForPageLoad(WebDriver driver) {
@@ -64,6 +73,8 @@ public class WebUtilis {
 	@SuppressWarnings("deprecation")
 	public static void sendkeysTab(WebDriver driver, String locator, String testData) {
 		WebElement element = driver.findElement(By.xpath(locator));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	    wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
 		highlight(driver, element);
 		try {
 			driver.manage().timeouts().implicitlyWait(SynchronizationTime, TimeUnit.SECONDS);
@@ -93,6 +104,8 @@ public class WebUtilis {
 		WebElement element = null;
 		try {
 			element = driver.findElement(By.xpath(locator));
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		    wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
 			highlight(driver, element);
 		}catch(Exception e) {
 			System.out.println("error in finding element" +locator);
