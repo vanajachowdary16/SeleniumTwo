@@ -24,6 +24,7 @@ public class WebUtilis {
 	public final static String agrstyle = "arguments[0].style.border='3px solid red'";
 	public final static String agrClick ="argument[0].click()";
 	public final static String agrsStyleEmpty = "arguments[0].style.broder=''";
+	public final static String agrsClick="argument[0].click();";
 	
 	public static WebDriver driver = new ChromeDriver();
 	public  WebDriver getDriver() {
@@ -113,6 +114,13 @@ public class WebUtilis {
 		return element;
 			
 		}
-
+	public static void JsClick(WebDriver driver, WebElement element){
+		try {
+			((JavascriptExecutor) driver).executeScript(agrsClick, element);
+		}catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
 
 }
