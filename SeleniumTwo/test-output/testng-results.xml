@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-16T15:58:57 IST" name="Default suite" finished-at="2025-03-16T15:59:27 IST" duration-ms="29680">
+  <suite started-at="2025-05-09T13:43:38 IST" name="Default suite" finished-at="2025-05-09T13:43:57 IST" duration-ms="19950">
     <groups>
     </groups>
-    <test started-at="2025-03-16T15:58:57 IST" name="Default test" finished-at="2025-03-16T15:59:27 IST" duration-ms="29680">
-      <class name="test.scripts.GmailRegistrationTest">
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:test.scripts.GmailRegistrationTest@2b62442c]" started-at="2025-03-16T15:58:57 IST" name="SetUp" finished-at="2025-03-16T15:58:58 IST" duration-ms="1256" status="PASS">
+    <test started-at="2025-05-09T13:43:38 IST" name="Default test" finished-at="2025-05-09T13:43:57 IST" duration-ms="19950">
+      <class name="test.scripts.HyperlinksTest">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:test.scripts.HyperlinksTest@3224a577]" started-at="2025-05-09T13:43:38 IST" name="SetUp" finished-at="2025-05-09T13:43:42 IST" duration-ms="4459" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method signature="TestGmailRegistration()[pri:0, instance:test.scripts.GmailRegistrationTest@2b62442c]" started-at="2025-03-16T15:58:58 IST" name="TestGmailRegistration" finished-at="2025-03-16T15:59:27 IST" duration-ms="28390" status="PASS">
+        <test-method signature="checkHyperLinksOnAmazon()[pri:0, instance:test.scripts.HyperlinksTest@3224a577]" started-at="2025-05-09T13:43:42 IST" name="checkHyperLinksOnAmazon" finished-at="2025-05-09T13:43:57 IST" duration-ms="15456" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestGmailRegistration -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:test.scripts.GmailRegistrationTest@2b62442c]" started-at="2025-03-16T15:59:27 IST" name="afterMethod" finished-at="2025-03-16T15:59:27 IST" duration-ms="352" status="PASS">
+        </test-method> <!-- checkHyperLinksOnAmazon -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:test.scripts.HyperlinksTest@3224a577]" started-at="2025-05-09T13:43:58 IST" name="afterMethod" finished-at="2025-05-09T13:43:58 IST" duration-ms="268" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- test.scripts.GmailRegistrationTest -->
+      </class> <!-- test.scripts.HyperlinksTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

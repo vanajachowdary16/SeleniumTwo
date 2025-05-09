@@ -13,7 +13,7 @@ import Test.Uitilities.WebUtilis;
 public class GmailRegistrationTest extends WebUtilis {
 	
 	public static final String GmailUrl ="https://accounts.google.co.in/";
-	public static final String createAccount ="//button[@class='VfPpkd-LgbsSe VfPpkd-LgbsSe-OWXEXe-dgl2Hf ksBjEc lKxP2d LQeN7 BqKGqe eR0mzb TrZEUc J7pUA']";
+	public static final String createAccount ="//span[@class='VfPpkd-vQzf8d' and text()='Create account']\r\n";
 	public static final String personalUseOption = "(//span[@jsname='K4r5Ff'])[1]";
 	public static final String CreateAccountxpath="(//span[@jsname='V67aGc'])[3]";
 	public static final String firstNamexpath ="//input[@name='firstName']";
@@ -46,7 +46,7 @@ public class GmailRegistrationTest extends WebUtilis {
 	@Test
 	public void TestGmailRegistration() throws InterruptedException {
 		
-		WebElement createAccountelement=WebUtilis.findElementByxpath(getDriver(), CreateAccountxpath);
+		WebElement createAccountelement=WebUtilis.findElementByxpath(getDriver(), createAccount);
 		Thread.sleep(2000);
 		createAccountelement.click();
 		//WebUtilis.JsClick(getDriver(), createAccountelement);	

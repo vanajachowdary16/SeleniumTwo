@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.scripts.GmailRegistrationTest">
+      <class name="test.scripts.AmazonHyperlinksTest">
         <methods>
           <include name="SetUp"/>
+          <include name="checkHyperLinksOnAmazon"/>
           <include name="afterMethod"/>
-          <include name="TestGmailRegistration"/>
         </methods>
-      </class> <!-- test.scripts.GmailRegistrationTest -->
+      </class> <!-- test.scripts.AmazonHyperlinksTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
