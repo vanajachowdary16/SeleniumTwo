@@ -38,5 +38,6 @@
 	</classpathentry>
 	<classpathentry exported="true" kind="con" path="org.testng.TESTNG_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
+	<classpathentry kind="src" path="/hnhcp-automation"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

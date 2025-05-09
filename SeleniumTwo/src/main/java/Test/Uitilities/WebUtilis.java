@@ -26,8 +26,8 @@ public class WebUtilis {
 	public final static String agrsStyleEmpty = "arguments[0].style.broder=''";
 	public final static String agrsClick="argument[0].click();";
 	
-	public static WebDriver driver = new ChromeDriver();
-	public  WebDriver getDriver() {
+	public static WebDriver driver;
+	public WebDriver getDriver() {
 		return driver;
 	}
 	public static void tearDown() {
@@ -46,7 +46,10 @@ public class WebUtilis {
 		caps.setBrowserName(chrome);
 		System.setProperty("webdriver.chrome.driver", webDriverPathChrome);
 		System.out.println(webDriverPathChrome);
+		
 		try {
+			driver = new ChromeDriver();
+			driver.manage().timeouts().implicitlyWait(SynchronizationTime, TimeUnit.SECONDS);
 			((WebDriver) driver).manage().window().maximize();
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
@@ -89,15 +92,14 @@ public class WebUtilis {
 	
 	@SuppressWarnings("deprecation")
 	public static void selectOptions(WebDriver driver, String locator, String testData) {
-		WebElement element = driver.findElement(By.xpath(locator));
-		highlight(driver, element);
+		WebElement element = WebUtilis.findElementByxpath(driver, locator);
 		try {
 			driver.manage().timeouts().implicitlyWait(SynchronizationTime, TimeUnit.SECONDS);
 			Select s = new Select(element);
 			s.selectByValue(testData);
 			
 		}catch(Exception e) {
-			System.out.println("error to ahndle");
+			System.out.println("error to handle");
 	}
 	}
 		
