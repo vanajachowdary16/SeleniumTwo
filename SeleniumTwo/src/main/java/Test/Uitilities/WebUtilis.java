@@ -107,8 +107,9 @@ public class WebUtilis {
 		WebElement element = null;
 		try {
 			element = driver.findElement(By.xpath(locator));
-			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		    wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
+			//WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		    //wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
+			driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 			highlight(driver, element);
 		}catch(Exception e) {
 			System.out.println("error in finding element" +locator);
@@ -116,6 +117,17 @@ public class WebUtilis {
 		return element;
 			
 		}
+	public static void JsScrollToelement(WebDriver driver, WebElement element) {
+		
+		try {
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView();", element);
+		
+	}catch(Exception e)
+		{
+		e.printStackTrace();
+	}
+	}
+	
 	public static void JsClick(WebDriver driver, WebElement element){
 		try {
 			((JavascriptExecutor) driver).executeScript(agrsClick, element);
