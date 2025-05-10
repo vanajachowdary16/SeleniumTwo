@@ -3,11 +3,8 @@ package test.scripts;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
-import com.gargoylesoftware.htmlunit.javascript.background.JavaScriptExecutor;
 
 import Test.Uitilities.WebUtilis;
 
@@ -41,7 +38,6 @@ public class AutomationExercise extends WebUtilis {
 		WebElement productId = WebUtilis.findElementByxpath(driver, mensProductAddToCart);
 		WebUtilis.JsScrollToelement(driver, productId);
 		productId.click();
-		Thread.sleep(2000);
 		WebElement viewCartelement = WebUtilis.findElementByxpath(driver, viewCart);
 		viewCartelement.click();
 		String productInCart=driver.findElement(By.xpath(mensShirtText)).getText();
