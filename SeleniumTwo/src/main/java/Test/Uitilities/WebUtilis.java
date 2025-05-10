@@ -28,7 +28,7 @@ public class WebUtilis {
 	public final static String agrsClick="argument[0].click();";
 	
 	public static WebDriver driver;
-	public WebDriver getDriver() {
+	public static WebDriver getDriver() {
 		return driver;
 	}
 	public static void tearDown() {
