@@ -11,6 +11,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -109,7 +110,9 @@ public class WebUtilis {
 			element = driver.findElement(By.xpath(locator));
 			//WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		    //wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
-			driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+			//driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+			FluentWait wait = new FluentWait(driver);
+			 wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
 			highlight(driver, element);
 		}catch(Exception e) {
 			System.out.println("error in finding element" +locator);
