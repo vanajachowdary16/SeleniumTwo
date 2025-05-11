@@ -7,21 +7,10 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import Test.Uitilities.WebUtilis;
+import test.PageObjects.ExercisePageObjects;
 
-public class AutomationExercise extends WebUtilis {
-	
-	public static String Url="https://www.automationexercise.com/";
-	
-	public static String mensProductAddToCart="(//*[@class='btn btn-default add-to-cart'])[3]";
-	
-	public static String viewCart="(//a[@href='/view_cart'])[2]";
-	
-	public static String mensShirtText="//*[contains(text(), \"Men > Tshirts\")]";
-	
-	
-	
-	
-	
+public class AutomationExercise extends ExercisePageObjects {
+			
 	@BeforeClass
 	public void SetUp() {
 		WebUtilis.LaunchDriver();
