@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.scripts.AutomationExercise">
+      <class name="test.scripts.FBRegistrationTest">
         <methods>
-          <include name="testAddtoCart"/>
+          <include name="TestFBRegistration"/>
           <include name="SetUp"/>
           <include name="afterMethod"/>
         </methods>
-      </class> <!-- test.scripts.AutomationExercise -->
+      </class> <!-- test.scripts.FBRegistrationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
