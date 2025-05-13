@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.scripts.FBRegistrationTest">
+      <class name="test.scripts.AutoSuggestive">
         <methods>
-          <include name="TestFBRegistration"/>
           <include name="SetUp"/>
           <include name="afterMethod"/>
+          <include name="autoSuggestiveDropDownTest"/>
         </methods>
-      </class> <!-- test.scripts.FBRegistrationTest -->
+      </class> <!-- test.scripts.AutoSuggestive -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

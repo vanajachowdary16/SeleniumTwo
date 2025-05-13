@@ -1,6 +1,7 @@
 package Test.Uitilities;
 
 import java.time.Duration;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -41,6 +42,22 @@ public class WebUtilis {
 			e.printStackTrace();
 		}
 	}
+	public static void handleAutosuggestDropDown(String xPath, String searchInput) throws InterruptedException {
+		List<WebElement> dropOptions= driver.findElements(By.xpath(xPath));
+		try {
+		for(WebElement option : dropOptions) {
+			if(option.getText().equalsIgnoreCase(searchInput)) {
+				//WebUtilis.JsClick(driver, option);				
+				option.click();
+				System.out.println(option.getAttribute("innerText"));
+				break;
+			}
+		}
+		}catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
 	public static void LaunchDriver() {
 		DesiredCapabilities caps = new DesiredCapabilities();;
 		
@@ -56,6 +73,11 @@ public class WebUtilis {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}
+	@SuppressWarnings({ "unchecked", "rawtypes" })
+	public static void fluentWait(String locator) {
+		FluentWait wait = new FluentWait(driver);
+		 wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
 	}
 	@SuppressWarnings("deprecation")
 	public static void waitForPageLoad(WebDriver driver) {
@@ -111,8 +133,7 @@ public class WebUtilis {
 			//WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		    //wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
 			//driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-			FluentWait wait = new FluentWait(driver);
-			 wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
+			WebUtilis.fluentWait(locator);
 			highlight(driver, element);
 		}catch(Exception e) {
 			System.out.println("error in finding element" +locator);
