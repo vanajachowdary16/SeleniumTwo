@@ -42,7 +42,7 @@ public class WebUtilis {
 			e.printStackTrace();
 		}
 	}
-	public static void handleAutosuggestDropDown(String xPath, String searchInput) throws InterruptedException {
+	public static void handleAutosuggestDropDown(String xPath, String searchInput){
 		List<WebElement> dropOptions= driver.findElements(By.xpath(xPath));
 		try {
 		for(WebElement option : dropOptions) {
