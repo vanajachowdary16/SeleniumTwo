@@ -58,6 +58,7 @@ public class WebUtilis {
 			e.printStackTrace();
 		}
 	}
+	@SuppressWarnings("deprecation")
 	public static void LaunchDriver() {
 		DesiredCapabilities caps = new DesiredCapabilities();;
 		
