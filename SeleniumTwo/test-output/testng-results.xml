@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-15T15:41:54 IST" name="Default suite" finished-at="2025-05-15T15:42:01 IST" duration-ms="7062">
+  <suite started-at="2025-05-16T16:52:57 IST" name="Default suite" finished-at="2025-05-16T16:53:53 IST" duration-ms="56512">
     <groups>
     </groups>
-    <test started-at="2025-05-15T15:41:54 IST" name="Default test" finished-at="2025-05-15T15:42:01 IST" duration-ms="7062">
-      <class name="test.scripts.AutoSuggestive">
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:test.scripts.AutoSuggestive@4f4c4b1a]" started-at="2025-05-15T15:41:54 IST" name="SetUp" finished-at="2025-05-15T15:41:57 IST" duration-ms="2490" status="PASS">
+    <test started-at="2025-05-16T16:52:57 IST" name="Default test" finished-at="2025-05-16T16:53:53 IST" duration-ms="56512">
+      <class name="test.scripts.SearchAndAddtoCartAmazon">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:test.scripts.SearchAndAddtoCartAmazon@5f0fd5a0]" started-at="2025-05-16T16:52:57 IST" name="SetUp" finished-at="2025-05-16T16:53:01 IST" duration-ms="3759" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method signature="autoSuggestiveDropDownTest()[pri:0, instance:test.scripts.AutoSuggestive@4f4c4b1a]" started-at="2025-05-15T15:41:57 IST" name="autoSuggestiveDropDownTest" finished-at="2025-05-15T15:42:01 IST" duration-ms="4342" status="PASS">
+        <test-method signature="TestAddtoCart()[pri:0, instance:test.scripts.SearchAndAddtoCartAmazon@5f0fd5a0]" started-at="2025-05-16T16:53:01 IST" name="TestAddtoCart" finished-at="2025-05-16T16:53:53 IST" duration-ms="52721" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- autoSuggestiveDropDownTest -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:test.scripts.AutoSuggestive@4f4c4b1a]" started-at="2025-05-15T15:42:01 IST" name="afterMethod" finished-at="2025-05-15T15:42:01 IST" duration-ms="204" status="PASS">
+        </test-method> <!-- TestAddtoCart -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:test.scripts.SearchAndAddtoCartAmazon@5f0fd5a0]" started-at="2025-05-16T16:53:54 IST" name="afterMethod" finished-at="2025-05-16T16:53:54 IST" duration-ms="428" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- test.scripts.AutoSuggestive -->
+      </class> <!-- test.scripts.SearchAndAddtoCartAmazon -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

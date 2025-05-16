@@ -101,9 +101,7 @@ public class WebUtilis {
 	@SuppressWarnings("deprecation")
 	public static void sendkeysTab(WebDriver driver, String locator, String testData) {
 		WebElement element = driver.findElement(By.xpath(locator));
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-	    wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
-		highlight(driver, element);
+		WebUtilis.fluentWait(locator);
 		try {
 			driver.manage().timeouts().implicitlyWait(SynchronizationTime, TimeUnit.SECONDS);
 			element.sendKeys(testData);

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.scripts.AutoSuggestive">
+      <class name="test.scripts.SearchAndAddtoCartAmazon">
         <methods>
-          <include name="SetUp"/>
+          <include name="TestAddtoCart"/>
           <include name="afterMethod"/>
-          <include name="autoSuggestiveDropDownTest"/>
+          <include name="SetUp"/>
         </methods>
-      </class> <!-- test.scripts.AutoSuggestive -->
+      </class> <!-- test.scripts.SearchAndAddtoCartAmazon -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
