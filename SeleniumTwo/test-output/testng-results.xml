@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-16T16:52:57 IST" name="Default suite" finished-at="2025-05-16T16:53:53 IST" duration-ms="56512">
+  <suite started-at="2025-05-19T15:16:21 IST" name="Default suite" finished-at="2025-05-19T15:16:28 IST" duration-ms="6951">
     <groups>
     </groups>
-    <test started-at="2025-05-16T16:52:57 IST" name="Default test" finished-at="2025-05-16T16:53:53 IST" duration-ms="56512">
-      <class name="test.scripts.SearchAndAddtoCartAmazon">
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:test.scripts.SearchAndAddtoCartAmazon@5f0fd5a0]" started-at="2025-05-16T16:52:57 IST" name="SetUp" finished-at="2025-05-16T16:53:01 IST" duration-ms="3759" status="PASS">
+    <test started-at="2025-05-19T15:16:21 IST" name="Default test" finished-at="2025-05-19T15:16:28 IST" duration-ms="6951">
+      <class name="test.scripts.HandleAlerts">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:test.scripts.HandleAlerts@495ee280]" started-at="2025-05-19T15:16:21 IST" name="SetUp" finished-at="2025-05-19T15:16:25 IST" duration-ms="4046" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method signature="TestAddtoCart()[pri:0, instance:test.scripts.SearchAndAddtoCartAmazon@5f0fd5a0]" started-at="2025-05-16T16:53:01 IST" name="TestAddtoCart" finished-at="2025-05-16T16:53:53 IST" duration-ms="52721" status="PASS">
+        <test-method signature="testAlerts()[pri:0, instance:test.scripts.HandleAlerts@495ee280]" started-at="2025-05-19T15:16:25 IST" name="testAlerts" finished-at="2025-05-19T15:16:28 IST" duration-ms="2860" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestAddtoCart -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:test.scripts.SearchAndAddtoCartAmazon@5f0fd5a0]" started-at="2025-05-16T16:53:54 IST" name="afterMethod" finished-at="2025-05-16T16:53:54 IST" duration-ms="428" status="PASS">
+        </test-method> <!-- testAlerts -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:test.scripts.HandleAlerts@495ee280]" started-at="2025-05-19T15:16:28 IST" name="afterMethod" finished-at="2025-05-19T15:16:28 IST" duration-ms="215" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- test.scripts.SearchAndAddtoCartAmazon -->
+      </class> <!-- test.scripts.HandleAlerts -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
