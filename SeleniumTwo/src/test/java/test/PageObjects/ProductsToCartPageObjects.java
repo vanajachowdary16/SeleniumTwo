@@ -15,6 +15,8 @@ public class ProductsToCartPageObjects extends WebUtilis{
 	
 	public static String addToCartButtonXpath="//div[@class='product-action']/button";
 	
+	public static String productsLocator="h4.product-name";
+	
 	
 	
 	public static  void addItems(WebDriver driver,String[] itemsNeeded)
@@ -23,7 +25,10 @@ public class ProductsToCartPageObjects extends WebUtilis{
 
 	int j=0;
 
-	List<WebElement> products=driver.findElements(By.cssSelector("h4.product-name"));
+	List<WebElement> products=driver.findElements(By.cssSelector(productsLocator));
+	/*for (WebElement product : products) {
+	    System.out.println(product.getText());
+	}*/
 
 
 	for(int i=0;i<products.size();i++)
@@ -65,9 +70,8 @@ public class ProductsToCartPageObjects extends WebUtilis{
 	if(j==itemsNeeded.length)
 
 	{
-		
-
-	break;
+		System.out.println(j);	
+		break;
 
 	}
 	}
