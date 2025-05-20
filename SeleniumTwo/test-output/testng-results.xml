@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-19T15:16:21 IST" name="Default suite" finished-at="2025-05-19T15:16:28 IST" duration-ms="6951">
+  <suite started-at="2025-05-19T22:29:17 IST" name="Default suite" finished-at="2025-05-19T22:29:20 IST" duration-ms="3013">
     <groups>
     </groups>
-    <test started-at="2025-05-19T15:16:21 IST" name="Default test" finished-at="2025-05-19T15:16:28 IST" duration-ms="6951">
-      <class name="test.scripts.HandleAlerts">
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:test.scripts.HandleAlerts@495ee280]" started-at="2025-05-19T15:16:21 IST" name="SetUp" finished-at="2025-05-19T15:16:25 IST" duration-ms="4046" status="PASS">
+    <test started-at="2025-05-19T22:29:17 IST" name="Default test" finished-at="2025-05-19T22:29:20 IST" duration-ms="3013">
+      <class name="test.scripts.ProductsToCart">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:test.scripts.ProductsToCart@4fa1c212]" started-at="2025-05-19T22:29:17 IST" name="SetUp" finished-at="2025-05-19T22:29:20 IST" duration-ms="2373" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method signature="testAlerts()[pri:0, instance:test.scripts.HandleAlerts@495ee280]" started-at="2025-05-19T15:16:25 IST" name="testAlerts" finished-at="2025-05-19T15:16:28 IST" duration-ms="2860" status="PASS">
+        <test-method signature="testItemsaddToCart()[pri:0, instance:test.scripts.ProductsToCart@4fa1c212]" started-at="2025-05-19T22:29:20 IST" name="testItemsaddToCart" finished-at="2025-05-19T22:29:20 IST" duration-ms="573" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testAlerts -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:test.scripts.HandleAlerts@495ee280]" started-at="2025-05-19T15:16:28 IST" name="afterMethod" finished-at="2025-05-19T15:16:28 IST" duration-ms="215" status="PASS">
+        </test-method> <!-- testItemsaddToCart -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:test.scripts.ProductsToCart@4fa1c212]" started-at="2025-05-19T22:29:20 IST" name="afterMethod" finished-at="2025-05-19T22:29:21 IST" duration-ms="353" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- test.scripts.HandleAlerts -->
+      </class> <!-- test.scripts.ProductsToCart -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

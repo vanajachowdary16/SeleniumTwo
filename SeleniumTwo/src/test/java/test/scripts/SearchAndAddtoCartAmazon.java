@@ -55,9 +55,7 @@ public class SearchAndAddtoCartAmazon extends SearchAndAddtoCartAmazonPageObject
 		//String numericOnly = subtotalValue.replaceAll("[^\\d]", "");
 		double subtotalFormatted = Double.parseDouble(subtotalValue.replaceAll("[$,]", "").trim());
 
-
-		System.out.println(subtotalFormatted);
-		
+		System.out.println(subtotalFormatted);		
 		Assert.assertEquals(productTitleInsearch, productInCartTitle);
 		Assert.assertEquals(addedQty, addedTwice);	
 		int addedProductsCount = elementCount(productInCart);
@@ -69,15 +67,10 @@ public class SearchAndAddtoCartAmazon extends SearchAndAddtoCartAmazonPageObject
 			
 		}else {
 			System.out.println("product is not duplicated");
-		}
-		
-		int totalQty=Integer.parseInt(addedQty);
-		
-		double subTotal = priceValue*totalQty;
-		System.out.println(subTotal);
-		
-		System.out.println("subtotal is " +subTotal);
-		
+		}		
+		int totalQty=Integer.parseInt(addedQty);		
+		double subTotal = priceValue*totalQty;	
+		System.out.println("subtotal is " +subTotal);		
 		Assert.assertEquals(subtotalFormatted, subTotal);
 		
 	}
