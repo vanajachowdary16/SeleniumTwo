@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-19T22:29:17 IST" name="Default suite" finished-at="2025-05-19T22:29:20 IST" duration-ms="3013">
+  <suite started-at="2025-05-21T23:06:50 IST" name="Default suite" finished-at="2025-05-21T23:07:41 IST" duration-ms="51097">
     <groups>
     </groups>
-    <test started-at="2025-05-19T22:29:17 IST" name="Default test" finished-at="2025-05-19T22:29:20 IST" duration-ms="3013">
-      <class name="test.scripts.ProductsToCart">
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:test.scripts.ProductsToCart@4fa1c212]" started-at="2025-05-19T22:29:17 IST" name="SetUp" finished-at="2025-05-19T22:29:20 IST" duration-ms="2373" status="PASS">
+    <test started-at="2025-05-21T23:06:50 IST" name="Default test" finished-at="2025-05-21T23:07:41 IST" duration-ms="51097">
+      <class name="test.scripts.FindFooterSectionLinsOnMyntraHomePageTest">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:test.scripts.FindFooterSectionLinsOnMyntraHomePageTest@4fa1c212]" started-at="2025-05-21T23:06:50 IST" name="SetUp" finished-at="2025-05-21T23:06:54 IST" duration-ms="3912" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method signature="testItemsaddToCart()[pri:0, instance:test.scripts.ProductsToCart@4fa1c212]" started-at="2025-05-19T22:29:20 IST" name="testItemsaddToCart" finished-at="2025-05-19T22:29:20 IST" duration-ms="573" status="PASS">
+        <test-method signature="findFooterSectionLinks()[pri:0, instance:test.scripts.FindFooterSectionLinsOnMyntraHomePageTest@4fa1c212]" started-at="2025-05-21T23:06:54 IST" name="findFooterSectionLinks" finished-at="2025-05-21T23:07:41 IST" duration-ms="47119" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testItemsaddToCart -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:test.scripts.ProductsToCart@4fa1c212]" started-at="2025-05-19T22:29:20 IST" name="afterMethod" finished-at="2025-05-19T22:29:21 IST" duration-ms="353" status="PASS">
+        </test-method> <!-- findFooterSectionLinks -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:test.scripts.FindFooterSectionLinsOnMyntraHomePageTest@4fa1c212]" started-at="2025-05-21T23:07:41 IST" name="afterMethod" finished-at="2025-05-21T23:07:42 IST" duration-ms="453" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- test.scripts.ProductsToCart -->
+      </class> <!-- test.scripts.FindFooterSectionLinsOnMyntraHomePageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
