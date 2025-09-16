@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.scripts.ProductsToCart">
+      <class name="test.scripts.FindFooterSectionLinsOnMyntraHomePageTest">
         <methods>
           <include name="SetUp"/>
           <include name="afterMethod"/>
-          <include name="addItems"/>
+          <include name="findFooterSectionLinks"/>
         </methods>
-      </class> <!-- test.scripts.ProductsToCart -->
+      </class> <!-- test.scripts.FindFooterSectionLinsOnMyntraHomePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
