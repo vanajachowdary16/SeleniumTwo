@@ -48,11 +48,11 @@ public class FindFooterSectionLinsOnMyntraHomePageTest extends MyntraHomePageObj
 		WebElement popularSearchElement = driver.findElement(By.xpath(popularSearch));
 		List<WebElement> popularSearchLinks = popularSearchElement.findElements(By.tagName("a"));
 		System.out.println("Number of links in popular search section: "+popularSearchLinks.size());
-		for(int i=0;i<5;i++) {
-			System.out.println(popularSearchLinks.get(i).getAttribute("href"));
-			WebElement link = popularSearchLinks.get(i);
-			
-			String href = link.getAttribute("href");
+		for(int i=0;i<5;i++) {		
+			String href=popularSearchLinks.get(i).getAttribute("href");
+			System.out.println(href);
+			WebElement link = popularSearchLinks.get(i);			
+			//String href = link.getAttribute("href");
 			((JavascriptExecutor) driver).executeScript("window.open(arguments[0])", href);
 			
 			//action.moveToElement(link).click();
